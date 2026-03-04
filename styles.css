@@ -248,3 +248,38 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0 !important;
   cursor: pointer !important;
 }
+
+
+/* ===== 견적서 PDF(제출용) 스타일 ===== */
+body.pdf-export{
+  background:#ffffff !important;
+  color:#000000 !important;
+}
+body.pdf-export .no-print{display:none !important;}
+body.pdf-export .estimate-print{
+  background:#ffffff !important;
+  color:#000000 !important;
+}
+body.pdf-export .estimate-print *{
+  color:#000000 !important;
+  box-shadow:none !important;
+}
+body.pdf-export .estimate-print table{
+  border-collapse: collapse !important;
+}
+body.pdf-export .estimate-print th,
+body.pdf-export .estimate-print td{
+  border-color:#CBD5E1 !important;
+}
+body.pdf-export .estimate-print .muted{
+  color:#334155 !important;
+}
+
+@media print{
+  body{ background:#fff !important; color:#000 !important; }
+  .no-print{ display:none !important; }
+  .estimate-print{ background:#fff !important; color:#000 !important; }
+  .estimate-print *{ color:#000 !important; box-shadow:none !important; }
+  .estimate-print table{ border-collapse: collapse !important; }
+  .estimate-print th, .estimate-print td{ border-color:#CBD5E1 !important; }
+}
